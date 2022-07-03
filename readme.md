@@ -1,5 +1,11 @@
-simple forentend dev server write by deno. support hmr, ts.
+# Simple frontend dev server
 
-how to use:
+- 40 lines only
+- support hmr, typescript, react
 
-just cope the code to your own project and run: `deno run --unstable --allow-read --allow-net dev.ts`
+
+# mechanism
+
+- Deno.watchFs for detect the file changes
+- SSE for communication between frontend to backend, no nessary to use websocket
+- Deno.emmit for compile typescript 
